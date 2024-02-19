@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "best_doctor":
             MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
+        "get_started": MessageLookupByLibrary.simpleMessage("Get Started"),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
             "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience."),
         "title": MessageLookupByLibrary.simpleMessage("Docdoc")

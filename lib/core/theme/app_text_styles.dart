@@ -13,12 +13,12 @@ abstract class AppTextStyle {
     color: AppColors.mainBlue,
     fontWeight: FontWeight.w700,
   );
-  static TextStyle font13Gray70Weight400 = TextStyle(
-    fontSize: 24.sp,
+  static TextStyle font12Gray70Weight400 = TextStyle(
+    fontSize: 12.sp,
     color: AppColors.gray70,
     fontWeight: FontWeight.w400,
   );
-  static TextStyle font16Gray24Weight600 = TextStyle(
+  static TextStyle font16WhiteWeight600 = TextStyle(
     fontSize: 16.sp,
     color: Colors.white,
     fontWeight: FontWeight.w700,

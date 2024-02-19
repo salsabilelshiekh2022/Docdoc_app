@@ -14,7 +14,6 @@ class DoctorImageAndText extends StatelessWidget {
       children: [
         SvgPicture.asset(AppAssets.docdocLogoLowOpacity),
         Container(
-          child: Image.asset(AppAssets.onboardingDoctor),
           foregroundDecoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [
@@ -24,6 +23,7 @@ class DoctorImageAndText extends StatelessWidget {
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                   stops: const [0.14, 0.4])),
+          child: Image.asset(AppAssets.onboardingDoctor),
         ),
         Positioned(
           left: 0,
