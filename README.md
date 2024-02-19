@@ -7,3 +7,13 @@ This repository is still under development
 ## 🎨 System Design
 
 ![system design](https://github.com/salsabilelshiekh2022/Docdoc_app/assets/120952415/9318db8b-d054-4eae-91fe-f1fe85fa1ce8)
+
+## 🔌 Packages
+- flutter_screenutil
+- flutter_svg
+- flutter_localizations
+
+## 📸 ScreenShots
+| Docdoc                                      | Application                                |
+| -----------------------------------------   | -------------------------------------------|
+| <img src = "https://github.com/salsabilelshiekh2022/Docdoc_app/assets/120952415/6d1af0d5-8a7e-4b51-a67a-c661f809000f" width="400"/> |                                            |
