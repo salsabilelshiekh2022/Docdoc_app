@@ -56,9 +56,9 @@ flutter:
   
   uses-material-design: true
  
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/png/
+    - assets/images/svg/
   
   fonts:
     - family: Inter
@@ -71,6 +71,5 @@ flutter:
         - asset: assets/fonts/Inter-Light.ttf
         - asset: assets/fonts/Inter-Medium.ttf
         - asset: assets/fonts/Inter-SemiBold.ttf
-        - asset: assets/fonts/Inter-Thin.ttf
-          
+        - asset: assets/fonts/Inter-Thin.ttf  
   
