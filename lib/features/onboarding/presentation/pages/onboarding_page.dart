@@ -1,5 +1,6 @@
 import 'package:doc_app/core/utils/spacing.dart';
 import 'package:doc_app/features/onboarding/presentation/widgets/doc_logo_and_name.dart';
+import 'package:doc_app/features/onboarding/presentation/widgets/doctor_image_and_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,6 +19,7 @@ class OnboardingPage extends StatelessWidget {
               children: [
                 const DocLogoAndName(),
                 verticalSpace(30),
+                const DoctorImageAndText()
               ],
             ),
           ),
