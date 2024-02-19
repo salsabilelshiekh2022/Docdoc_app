@@ -1,0 +1,69 @@
+name: doc_app
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  # A build system for Dart code generation and modular compilation
+  build_runner: ^2.4.8
+  # Functional programming thingies
+  dartz: ^0.10.1
+  # Remote API
+  dio: ^5.4.1
+  pretty_dio_logger: ^1.3.1
+  # Localization
+  easy_localization: ^3.0.0
+  intl: ^0.18.1
+  # Value equality
+  equatable: ^2.0.5
+  # Bloc for state management
+  bloc: ^8.1.3  
+  flutter_bloc: ^8.1.4
+  # For splash screen
+  flutter_native_splash: 
+  # for adapting screen and font size.
+  flutter_screenutil: ^5.9.0
+  # An SVG rendering and widget library for Flutter, which allows painting 
+  flutter_svg: ^2.0.9
+  # For create toast messages
+  fluttertoast: ^8.2.4
+  # Service locator
+  get_it: ^7.6.7
+  # Checks for internet
+  internet_connection_checker: ^1.0.0+1
+  # For generate mock classes
+  mockito: ^5.4.4
+  # Local cache
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  
+  uses-material-design: true
+ 
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  
