@@ -50,7 +50,15 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  // skipped getter for the '\'title' key
+  /// `Docdoc`
+  String get title {
+    return Intl.message(
+      'Docdoc',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
 
   /// `Best Doctor Appointment App`
   String get best_doctor {

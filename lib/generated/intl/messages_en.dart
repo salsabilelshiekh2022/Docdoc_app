@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "best_doctor":
             MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
-            "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.")
+            "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience."),
+        "title": MessageLookupByLibrary.simpleMessage("Docdoc")
       };
 }

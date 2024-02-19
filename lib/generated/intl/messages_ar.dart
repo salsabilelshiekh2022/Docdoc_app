@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "best_doctor": MessageLookupByLibrary.simpleMessage(
             "أفضل تطبيق لحجز المواعيد الطبية"),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
-            "ادارة وجدولة كل مواعيدك الطبية بسهولة مع دوكدوك لتحصل على تجربة جديدة.")
+            "ادارة وجدولة كل مواعيدك الطبية بسهولة مع دوكدوك لتحصل على تجربة جديدة."),
+        "title": MessageLookupByLibrary.simpleMessage("Docdoc")
       };
 }

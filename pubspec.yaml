@@ -35,8 +35,6 @@ dependencies:
   flutter_screenutil: ^5.9.0
   # An SVG rendering and widget library for Flutter, which allows painting 
   flutter_svg: ^2.0.9
-  # For create toast messages
-  fluttertoast: ^8.2.4
   # Service locator
   get_it: ^7.6.7
   # Checks for internet

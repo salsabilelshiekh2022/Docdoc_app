@@ -1,3 +1,4 @@
+import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -29,6 +30,11 @@ class DocApp extends StatelessWidget {
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
+          fontFamily: "Inter",
+          primaryColor: AppColors.mainBlue,
+          appBarTheme: const AppBarTheme(
+            elevation: 0.0,
+          ),
           scaffoldBackgroundColor: Colors.white,
         ),
         initialRoute: Routes.onBoardingPage,
