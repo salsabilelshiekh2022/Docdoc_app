@@ -12,6 +12,7 @@ This repository is still under development
 - flutter_screenutil
 - flutter_svg
 - flutter_localizations
+- flutter_native_splash
 
 ## 📸 ScreenShots
 | Docdoc                                      | Application                                |
