@@ -24,8 +24,11 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "already_have_account": MessageLookupByLibrary.simpleMessage(
             "Already have an account yet? "),
+        "and": MessageLookupByLibrary.simpleMessage("and "),
         "best_doctor":
             MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
+        "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
+            "By logging, you agree to our "),
         "create_account":
             MessageLookupByLibrary.simpleMessage("Create Account"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
@@ -46,6 +49,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "or_Sign_in_with":
             MessageLookupByLibrary.simpleMessage("Or sign in with"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage(" PrivacyPolicy"),
         "remember_me": MessageLookupByLibrary.simpleMessage("Remember me"),
         "reset_password":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
@@ -55,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!"),
         "terms_and_conditions": MessageLookupByLibrary.simpleMessage(
             "By logging, you agree to our  Terms & Conditions and PrivacyPolicy."),
+        "terms_conditions":
+            MessageLookupByLibrary.simpleMessage("Terms & Conditions "),
         "title": MessageLookupByLibrary.simpleMessage("Docdoc"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome Back"),
         "your_number": MessageLookupByLibrary.simpleMessage("Your number")

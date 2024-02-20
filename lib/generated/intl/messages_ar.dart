@@ -24,8 +24,11 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟ "),
+        "and": MessageLookupByLibrary.simpleMessage("و"),
         "best_doctor": MessageLookupByLibrary.simpleMessage(
             "أفضل تطبيق لحجز المواعيد الطبية"),
+        "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
+            "من خلال تسجيل الدخول، فإنك توافق على "),
         "create_account": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "email_or_phone_number": MessageLookupByLibrary.simpleMessage(
@@ -45,6 +48,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "or_Sign_in_with": MessageLookupByLibrary.simpleMessage(
             "أو قم بتسجيل الدخول باستخدام"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "remember_me": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "reset_password":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
@@ -54,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "اشترك الآن وابدأ استكشاف كل ما تقدمه تطبيقنا. نحن متحمسون لاستقبالك في مجتمعنا!"),
         "terms_and_conditions": MessageLookupByLibrary.simpleMessage(
             "بتسجيل الدخول، أنت توافق على شروطنا وسياسة الخصوصية."),
+        "terms_conditions":
+            MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
         "title": MessageLookupByLibrary.simpleMessage("Docdoc"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبًا مجددًا"),
         "your_number": MessageLookupByLibrary.simpleMessage("رقمك")

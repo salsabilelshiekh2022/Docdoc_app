@@ -21,5 +21,10 @@
 "sign_in": "تسجيل الدخول",
 "forget_password_subtitle": "في تطبيقنا، نحن نأخذ أمان معلوماتك بجدية.",
 "email_or_phone_number": "البريد الإلكتروني أو رقم الهاتف",
-"reset_password": "إعادة تعيين كلمة المرور"
+"reset_password": "إعادة تعيين كلمة المرور",
+"by_logging_you_agree": "من خلال تسجيل الدخول، فإنك توافق على ",
+  "terms_conditions": "الشروط والأحكام",
+  "and": "و",
+  "privacy_policy": "سياسة الخصوصية"
+
 }

@@ -21,7 +21,10 @@
     "sign_in":"Sign In",
     "forget_password_subtitle":"At our app, we take the security of your information seriously.",
     "email_or_phone_number":"Email or Phone Number",
-    "reset_password":"Reset Password"
-    
+    "reset_password":"Reset Password",
+    "terms_conditions":"Terms & Conditions ",
+    "and":"and ",
+    "privacy_policy":" PrivacyPolicy",
+    "by_logging_you_agree":"By logging, you agree to our " 
 
 }
