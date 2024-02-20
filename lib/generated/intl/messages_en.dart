@@ -22,11 +22,41 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "already_have_account": MessageLookupByLibrary.simpleMessage(
+            "Already have an account yet? "),
         "best_doctor":
             MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
+        "create_account":
+            MessageLookupByLibrary.simpleMessage("Create Account"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "email_or_phone_number":
+            MessageLookupByLibrary.simpleMessage("Email or Phone Number"),
+        "forget_password_subtitle": MessageLookupByLibrary.simpleMessage(
+            "At our app, we take the security of your information seriously."),
+        "forgot_password":
+            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "get_started": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "login_subtitle": MessageLookupByLibrary.simpleMessage(
+            "We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in."),
+        "not_have_account": MessageLookupByLibrary.simpleMessage(
+            "Don\'t have an account yet? "),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
             "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience."),
-        "title": MessageLookupByLibrary.simpleMessage("Docdoc")
+        "or_Sign_in_with":
+            MessageLookupByLibrary.simpleMessage("Or sign in with"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "remember_me": MessageLookupByLibrary.simpleMessage("Remember me"),
+        "reset_password":
+            MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "sign_in": MessageLookupByLibrary.simpleMessage("Sign In"),
+        "sign_up": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "sign_up_subtitle": MessageLookupByLibrary.simpleMessage(
+            "Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!"),
+        "terms_and_conditions": MessageLookupByLibrary.simpleMessage(
+            "By logging, you agree to our  Terms & Conditions and PrivacyPolicy."),
+        "title": MessageLookupByLibrary.simpleMessage("Docdoc"),
+        "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+        "your_number": MessageLookupByLibrary.simpleMessage("Your number")
       };
 }
