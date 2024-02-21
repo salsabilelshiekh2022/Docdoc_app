@@ -1,5 +1,5 @@
 import '../../../domain/entities/user.dart';
-import 'data.dart';
+import 'user_data.dart';
 
 class UserModel extends User {
   final String? message;
