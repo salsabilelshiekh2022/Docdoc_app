@@ -1,8 +1,7 @@
 import 'package:dio/dio.dart';
 
-abstract class Failure {
+class Failure implements Exception {
   final String message;
-
   Failure({required this.message});
 }
 
