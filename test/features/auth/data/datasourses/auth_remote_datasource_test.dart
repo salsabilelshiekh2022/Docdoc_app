@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:dartz/dartz.dart';
 import 'package:doc_app/core/database/network/api_consumer.dart';
 import 'package:doc_app/core/database/network/end_points.dart';
 import 'package:doc_app/features/auth/data/datasourses/auth_remote_datasource.dart';
@@ -36,7 +35,7 @@ void main() {
     // act
     final result = await datasource.login(email: tEmail, password: tPassword);
     //assert
-    expect(result, equals(Right(tUserModel)));
+    expect(result, equals(tUserModel));
   });
 
   test('Should return user if the register request is done', () async {
@@ -53,6 +52,6 @@ void main() {
     final result = await datasource.register(
         email: tEmail, password: tPassword, name: tName, phone: tPhone);
     //assert
-    expect(result, equals(Right(tUserModel)));
+    expect(result, equals(tUserModel));
   });
 }
