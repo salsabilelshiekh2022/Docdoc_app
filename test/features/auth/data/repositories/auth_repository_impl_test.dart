@@ -119,7 +119,7 @@ void main() {
         final result = await repository.register(
             email: tEmail, password: tPassword, phone: tPhone, name: tName);
         //assert
-        expect(result, equals(Right(tUser)));
+        expect(result, equals(const Right(tUser)));
       });
       test('should cache user when we call remote data source succesful',
           () async {

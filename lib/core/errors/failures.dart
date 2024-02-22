@@ -1,8 +1,20 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:dio/dio.dart';
 
 class Failure implements Exception {
   final String message;
+
   Failure({required this.message});
+
+  @override
+  bool operator ==(covariant Failure other) {
+    if (identical(this, other)) return true;
+
+    return other.message == message;
+  }
+
+  @override
+  int get hashCode => message.hashCode;
 }
 
 class ServerFailure extends Failure {
