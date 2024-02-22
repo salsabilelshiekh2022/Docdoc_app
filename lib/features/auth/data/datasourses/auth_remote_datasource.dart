@@ -1,12 +1,11 @@
-import 'package:dartz/dartz.dart';
 import 'package:doc_app/core/database/network/api_consumer.dart';
 import 'package:doc_app/core/database/network/end_points.dart';
 import 'package:doc_app/core/errors/failures.dart';
 import 'package:doc_app/features/auth/data/models/user_model/user_model.dart';
 
 abstract class AuthRemoteDatasource {
-  Future<Either<Failure, UserModel>> login({required email, required password});
-  Future<Either<Failure, UserModel>> register(
+  Future<UserModel> login({required email, required password});
+  Future<UserModel> register(
       {required email, required password, required phone, required name});
 }
 
@@ -15,22 +14,21 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
 
   AuthRemoteDatasourceImpl({required this.api});
   @override
-  Future<Either<Failure, UserModel>> login(
-      {required email, required password}) async {
+  Future<UserModel> login({required email, required password}) async {
     try {
       final response = await api.post(path: EndPoint.login, data: {
         "email": email,
         "password": password,
       });
       final user = UserModel.fromJson(response);
-      return Right(user);
+      return (user);
     } on ServerFailure catch (e) {
-      return left(ServerFailure(message: e.toString()));
+      throw ServerFailure(message: e.toString());
     }
   }
 
   @override
-  Future<Either<Failure, UserModel>> register(
+  Future<UserModel> register(
       {required email,
       required password,
       required phone,
@@ -45,9 +43,9 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
         "password_confirmation": password
       });
       final user = UserModel.fromJson(response);
-      return Right(user);
+      return user;
     } on ServerFailure catch (e) {
-      return left(ServerFailure(message: e.toString()));
+      throw ServerFailure(message: e.toString());
     }
   }
 }
