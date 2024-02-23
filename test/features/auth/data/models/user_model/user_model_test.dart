@@ -8,11 +8,11 @@ import 'package:flutter_test/flutter_test.dart';
 import '../../../../../fixture/fixture_reader.dart';
 
 void main() {
-  final tUserData = UserData(
+  const tUserData = UserData(
     token: "qwer",
     username: "sali",
   );
-  final tUser =
+  const tUser =
       UserModel(code: 200, message: "success", status: true, data: tUserData);
 
   test('user model ...', () async {

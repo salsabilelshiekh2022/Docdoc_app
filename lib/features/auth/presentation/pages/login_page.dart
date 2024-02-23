@@ -1,8 +1,13 @@
+import 'package:doc_app/core/di/dependency_injection.dart';
+import 'package:doc_app/core/routing/routes.dart';
+import 'package:doc_app/core/utils/extention.dart';
 import 'package:doc_app/core/utils/spacing.dart';
+import 'package:doc_app/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:doc_app/features/auth/presentation/widgets/login_form.dart';
 import 'package:doc_app/features/auth/presentation/widgets/title_and_subtitle.dart';
 import 'package:doc_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../widgets/have_account.dart';
@@ -16,33 +21,39 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding:
-              EdgeInsets.only(left: 24.w, right: 24.w, top: 50.h, bottom: 24.h),
-          child: SingleChildScrollView(
-            physics: const BouncingScrollPhysics(),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                TitleAndSubtitle(
-                  title: S.of(context).welcome_back,
-                  subtitle: S.of(context).login_subtitle,
-                ),
-                verticalSpace(36),
-                const LoginForm(),
-                verticalSpace(45),
-                const OrSignWith(),
-                verticalSpace(32),
-                const SocialMediaLogin(),
-                verticalSpace(60),
-                const TermsAndConditionsText(),
-                verticalSpace(24),
-                HaveAccountText(
-                  haveAccount: S.of(context).not_have_account,
-                  signinOrSignUp: S.of(context).sign_up,
-                ),
-              ],
+      body: BlocProvider(
+        create: (context) => getIt<AuthBloc>(),
+        child: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.only(
+                left: 24.w, right: 24.w, top: 50.h, bottom: 24.h),
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TitleAndSubtitle(
+                    title: S.of(context).welcome_back,
+                    subtitle: S.of(context).login_subtitle,
+                  ),
+                  verticalSpace(36),
+                  const LoginForm(),
+                  verticalSpace(45),
+                  const OrSignWith(),
+                  verticalSpace(32),
+                  const SocialMediaLogin(),
+                  verticalSpace(32),
+                  const TermsAndConditionsText(),
+                  verticalSpace(24),
+                  HaveAccountText(
+                    haveAccount: S.of(context).not_have_account,
+                    signinOrSignUp: S.of(context).sign_up,
+                    onPressed: () {
+                      context.pushReplacementNamed(Routes.signUpPage);
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         ),

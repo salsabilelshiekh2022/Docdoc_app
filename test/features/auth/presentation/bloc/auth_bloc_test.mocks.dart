@@ -48,11 +48,11 @@ class _FakeEither_1<L, R> extends _i1.SmartFake implements _i3.Either<L, R> {
         );
 }
 
-/// A class which mocks [Login].
+/// A class which mocks [LoginUsecase].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockLogin extends _i1.Mock implements _i4.Login {
-  MockLogin() {
+class MockLoginUsecase extends _i1.Mock implements _i4.LoginUsecase {
+  MockLoginUsecase() {
     _i1.throwOnMissingStub(this);
   }
 
@@ -66,7 +66,7 @@ class MockLogin extends _i1.Mock implements _i4.Login {
       ) as _i2.AuthRepository);
 
   @override
-  _i5.Future<_i3.Either<_i6.Failure, _i7.User>> call(_i4.Params? params) =>
+  _i5.Future<_i3.Either<_i6.Failure, _i7.User>> call(_i4.LoginParams? params) =>
       (super.noSuchMethod(
         Invocation.method(
           #call,
@@ -83,11 +83,11 @@ class MockLogin extends _i1.Mock implements _i4.Login {
       ) as _i5.Future<_i3.Either<_i6.Failure, _i7.User>>);
 }
 
-/// A class which mocks [Register].
+/// A class which mocks [RegisterUsecase].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockRegister extends _i1.Mock implements _i8.Register {
-  MockRegister() {
+class MockRegisterUsecase extends _i1.Mock implements _i8.RegisterUsecase {
+  MockRegisterUsecase() {
     _i1.throwOnMissingStub(this);
   }
 
@@ -101,7 +101,8 @@ class MockRegister extends _i1.Mock implements _i8.Register {
       ) as _i2.AuthRepository);
 
   @override
-  _i5.Future<_i3.Either<_i6.Failure, _i7.User>> call(_i8.Params? params) =>
+  _i5.Future<_i3.Either<_i6.Failure, _i7.User>> call(
+          _i8.RegisterParams? params) =>
       (super.noSuchMethod(
         Invocation.method(
           #call,

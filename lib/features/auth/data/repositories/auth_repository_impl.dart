@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 
 import 'package:doc_app/core/errors/failures.dart';
 import 'package:doc_app/features/auth/data/datasourses/auth_local_datasource.dart';
@@ -27,8 +28,11 @@ class AuthRepositoryImpl extends AuthRepository {
             await remoteDatasource.login(email: email, password: password);
         localDatasource.cacheUser(userToCache: user.data!.token!);
         return Right(user);
-      } on ServerFailure catch (e) {
-        return Left(ServerFailure(message: e.toString()));
+      } catch (e) {
+        if (e is DioException) {
+          return left(ServerFailure.fromDioError(e));
+        }
+        return left(ServerFailure(message: e.toString()));
       }
     } else {
       return Left(ServerFailure(message: "No Internet"));
@@ -47,8 +51,11 @@ class AuthRepositoryImpl extends AuthRepository {
             email: email, password: password, phone: phone, name: name);
         localDatasource.cacheUser(userToCache: user.data!.token!);
         return Right(user);
-      } on ServerFailure catch (e) {
-        return Left(ServerFailure(message: e.toString()));
+      } catch (e) {
+        if (e is DioException) {
+          return left(ServerFailure.fromDioError(e));
+        }
+        return left(ServerFailure(message: e.toString()));
       }
     } else {
       return Left(Failure(message: "No Internet"));

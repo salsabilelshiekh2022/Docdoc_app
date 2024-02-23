@@ -11,16 +11,16 @@ import 'package:mockito/mockito.dart';
 
 import 'auth_bloc_test.mocks.dart';
 
-@GenerateMocks([Login, Register])
+@GenerateMocks([LoginUsecase, RegisterUsecase])
 void main() {
   late AuthBloc authBloc;
-  late MockLogin mockLogin;
-  late MockRegister mockRegister;
+  late MockLoginUsecase mockLoginUsecase;
+  late MockRegisterUsecase mockRegisterUsecase;
 
   setUp(() {
-    mockLogin = MockLogin();
-    mockRegister = MockRegister();
-    authBloc = AuthBloc(login: mockLogin, register: mockRegister);
+    mockLoginUsecase = MockLoginUsecase();
+    mockRegisterUsecase = MockRegisterUsecase();
+    authBloc = AuthBloc(login: mockLoginUsecase, register: mockRegisterUsecase);
   });
   group('login', () {
     test('Should emit [loading, success] when user is login successfully',
@@ -30,7 +30,8 @@ void main() {
           data: UserData(token: "qwer", username: "sali"),
           code: 200,
           status: true);
-      when(mockLogin.call(any)).thenAnswer((_) async => const Right(user));
+      when(mockLoginUsecase.call(any))
+          .thenAnswer((_) async => const Right(user));
       final expected = [
         LoginLoading(),
         LoginSuccess(),
@@ -41,7 +42,7 @@ void main() {
 
     test('Should emit [loading, error] when user is login unSuccessfully',
         () async {
-      when(mockLogin.call(any)).thenAnswer((_) async => Left(
+      when(mockLoginUsecase.call(any)).thenAnswer((_) async => Left(
           ServerFailure(message: 'Opps! there was an error try again later')));
       final expected = [
         LoginLoading(),
@@ -60,7 +61,8 @@ void main() {
           data: UserData(token: "qwer", username: "sali"),
           code: 200,
           status: true);
-      when(mockRegister.call(any)).thenAnswer((_) async => const Right(user));
+      when(mockRegisterUsecase.call(any))
+          .thenAnswer((_) async => const Right(user));
       final expected = [
         RegisterLoading(),
         RegisterSuccess(),
@@ -72,7 +74,7 @@ void main() {
 
     test('Should emit [loading, error] when user is register unSuccessfully',
         () async {
-      when(mockRegister.call(any)).thenAnswer((_) async => Left(
+      when(mockRegisterUsecase.call(any)).thenAnswer((_) async => Left(
           ServerFailure(message: 'Opps! there was an error try again later')));
       final expected = [
         RegisterLoading(),

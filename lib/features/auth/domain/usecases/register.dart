@@ -5,12 +5,12 @@ import 'package:doc_app/features/auth/domain/entities/user.dart';
 import 'package:doc_app/features/auth/domain/repositories/auth_repository.dart';
 import 'package:equatable/equatable.dart';
 
-class Register implements UseCase<User, Params> {
+class RegisterUsecase implements UseCase<User, RegisterParams> {
   final AuthRepository repository;
 
-  Register({required this.repository});
+  RegisterUsecase({required this.repository});
   @override
-  Future<Either<Failure, User>> call(Params params) async {
+  Future<Either<Failure, User>> call(RegisterParams params) async {
     return await repository.register(
         email: params.email,
         password: params.password,
@@ -19,13 +19,13 @@ class Register implements UseCase<User, Params> {
   }
 }
 
-class Params extends Equatable {
+class RegisterParams extends Equatable {
   final String email;
   final String password;
   final String name;
   final String phone;
 
-  const Params(
+  const RegisterParams(
       {required this.email,
       required this.password,
       required this.name,

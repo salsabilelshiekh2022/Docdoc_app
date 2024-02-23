@@ -53,16 +53,14 @@ void main() {
         final result =
             await repository.login(email: tEmail, password: tPassword);
         //assert
-        expect(result, equals(Right(tUser)));
+        expect(result, equals(const Right(tUser)));
       });
       test('should cache user when we call remote data source succesful',
           () async {
         //arrange
         when(mockAuthRemoteDatasource.login(email: tEmail, password: tPassword))
             .thenAnswer((realInvocation) async => tUserModel);
-        //act
-        final result =
-            await repository.login(email: tEmail, password: tPassword);
+
         //assert
         verify(
             mockAuthRemoteDatasource.login(email: tEmail, password: tPassword));

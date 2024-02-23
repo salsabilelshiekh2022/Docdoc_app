@@ -1,6 +1,5 @@
 import 'package:doc_app/core/database/network/api_consumer.dart';
 import 'package:doc_app/core/database/network/end_points.dart';
-import 'package:doc_app/core/errors/failures.dart';
 import 'package:doc_app/features/auth/data/models/user_model/user_model.dart';
 
 abstract class AuthRemoteDatasource {
@@ -15,16 +14,12 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
   AuthRemoteDatasourceImpl({required this.api});
   @override
   Future<UserModel> login({required email, required password}) async {
-    try {
-      final response = await api.post(path: EndPoint.login, data: {
-        "email": email,
-        "password": password,
-      });
-      final user = UserModel.fromJson(response);
-      return (user);
-    } on ServerFailure catch (e) {
-      throw ServerFailure(message: e.toString());
-    }
+    final response = await api.post(path: EndPoint.login, data: {
+      "email": email,
+      "password": password,
+    });
+    final user = UserModel.fromJson(response);
+    return (user);
   }
 
   @override
@@ -33,19 +28,15 @@ class AuthRemoteDatasourceImpl implements AuthRemoteDatasource {
       required password,
       required phone,
       required name}) async {
-    try {
-      final response = await api.post(path: EndPoint.register, data: {
-        "name": name,
-        "email": email,
-        "phone": phone,
-        "gender": 0,
-        "password": password,
-        "password_confirmation": password
-      });
-      final user = UserModel.fromJson(response);
-      return user;
-    } on ServerFailure catch (e) {
-      throw ServerFailure(message: e.toString());
-    }
+    final response = await api.post(path: EndPoint.register, data: {
+      "name": name,
+      "email": email,
+      "phone": phone,
+      "gender": 0,
+      "password": password,
+      "password_confirmation": password
+    });
+    final user = UserModel.fromJson(response);
+    return user;
   }
 }

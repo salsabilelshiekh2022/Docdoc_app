@@ -10,26 +10,27 @@ import 'login_test.mocks.dart';
 
 @GenerateMocks([AuthRepository])
 void main() {
-  late Login usecase;
+  late LoginUsecase usecase;
   late MockAuthRepository mockAuthRepository;
 
   setUp(() {
     mockAuthRepository = MockAuthRepository();
-    usecase = Login(repository: mockAuthRepository);
+    usecase = LoginUsecase(repository: mockAuthRepository);
   });
 
   test('Should return user from the repository', () async {
     //arrange
     const tEmail = "sali@gmail.com";
     const tPassword = "Aser@1234";
-    final tUser = User(email: tEmail, password: tPassword);
+    const tUser = User(email: tEmail, password: tPassword);
     when(mockAuthRepository.login(email: tEmail, password: tPassword))
-        .thenAnswer((_) async => Right(tUser));
+        .thenAnswer((_) async => const Right(tUser));
 
     //act
 
-    final result = await usecase(Params(email: tEmail, password: tPassword));
+    final result =
+        await usecase(const LoginParams(email: tEmail, password: tPassword));
     //assert
-    expect(result, Right(tUser));
+    expect(result, const Right(tUser));
   });
 }

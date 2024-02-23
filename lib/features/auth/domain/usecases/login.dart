@@ -5,22 +5,22 @@ import 'package:doc_app/features/auth/domain/entities/user.dart';
 import 'package:doc_app/features/auth/domain/repositories/auth_repository.dart';
 import 'package:equatable/equatable.dart';
 
-class Login implements UseCase<User, Params> {
+class LoginUsecase implements UseCase<User, LoginParams> {
   final AuthRepository repository;
 
-  Login({required this.repository});
+  LoginUsecase({required this.repository});
   @override
-  Future<Either<Failure, User>> call(Params params) async {
+  Future<Either<Failure, User>> call(LoginParams params) async {
     return await repository.login(
         email: params.email, password: params.password);
   }
 }
 
-class Params extends Equatable {
+class LoginParams extends Equatable {
   final String email;
   final String password;
 
-  const Params({required this.email, required this.password});
+  const LoginParams({required this.email, required this.password});
 
   @override
   List<Object> get props => [email, password];
