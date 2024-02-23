@@ -1,5 +1,7 @@
+import 'package:doc_app/core/routing/routes.dart';
 import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/core/theme/app_text_styles.dart';
+import 'package:doc_app/core/utils/extention.dart';
 import 'package:doc_app/core/utils/spacing.dart';
 import 'package:doc_app/core/widgets/app_text_form_field.dart';
 import 'package:doc_app/features/auth/presentation/bloc/auth_bloc.dart';
@@ -66,7 +68,9 @@ class _LoginFormState extends State<LoginForm> {
             Align(
               alignment: Alignment.topRight,
               child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  context.pushNamed(Routes.forgotPasswordPage);
+                },
                 child: Text(
                   S.of(context).forgot_password,
                   style: AppTextStyle.font12MainBlueWeight400,

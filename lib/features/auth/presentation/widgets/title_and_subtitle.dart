@@ -21,7 +21,7 @@ class TitleAndSubtitle extends StatelessWidget {
         verticalSpace(8),
         Text(
           subtitle,
-          style: AppTextStyle.font14Gray70Weight400,
+          style: AppTextStyle.font14Gray70Weight400.copyWith(wordSpacing: 1.5),
         ),
       ],
     );
