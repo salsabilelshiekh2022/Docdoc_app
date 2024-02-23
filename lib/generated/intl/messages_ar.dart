@@ -41,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "login_subtitle": MessageLookupByLibrary.simpleMessage(
             "نحن متحمسون لرؤيتك مجددًا، لا يمكننا الانتظار لنرى ماذا كنت تفعل منذ آخر مرة قمت فيها بتسجيل الدخول."),
+        "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "not_have_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب بعد؟ "),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
@@ -48,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "or_Sign_in_with": MessageLookupByLibrary.simpleMessage(
             "أو قم بتسجيل الدخول باستخدام"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
         "remember_me": MessageLookupByLibrary.simpleMessage("تذكرني"),

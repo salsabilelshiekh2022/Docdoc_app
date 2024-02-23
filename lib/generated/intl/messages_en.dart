@@ -42,6 +42,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "login_subtitle": MessageLookupByLibrary.simpleMessage(
             "We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in."),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
         "not_have_account": MessageLookupByLibrary.simpleMessage(
             "Don\'t have an account yet? "),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
@@ -49,6 +50,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "or_Sign_in_with":
             MessageLookupByLibrary.simpleMessage("Or sign in with"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage(" PrivacyPolicy"),
         "remember_me": MessageLookupByLibrary.simpleMessage("Remember me"),

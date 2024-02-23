@@ -25,6 +25,8 @@
     "terms_conditions":"Terms & Conditions ",
     "and":"and ",
     "privacy_policy":" PrivacyPolicy",
-    "by_logging_you_agree":"By logging, you agree to our " 
+    "by_logging_you_agree":"By logging, you agree to our ",
+    "name":"Name",
+    "phone":"Phone"
 
 }

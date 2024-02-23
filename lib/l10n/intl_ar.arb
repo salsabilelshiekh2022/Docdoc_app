@@ -25,6 +25,9 @@
 "by_logging_you_agree": "من خلال تسجيل الدخول، فإنك توافق على ",
   "terms_conditions": "الشروط والأحكام",
   "and": "و",
-  "privacy_policy": "سياسة الخصوصية"
+  "privacy_policy": "سياسة الخصوصية",
+  "name":"الاسم",
+    "phone":"رقم الهاتف"
+
 
 }
