@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:doc_app/core/theme/app_colors.dart';
 import 'package:doc_app/core/utils/app_constants.dart';
 import 'package:doc_app/generated/l10n.dart';
@@ -6,7 +8,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/routing/app_router.dart';
-import 'core/routing/routes.dart';
 
 class DocApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -21,7 +22,7 @@ class DocApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
-        locale: const Locale('en'),
+        locale: Locale(Platform.localeName.split('_')[0]),
         localizationsDelegates: const [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
@@ -39,7 +40,6 @@ class DocApp extends StatelessWidget {
           ),
           scaffoldBackgroundColor: Colors.white,
         ),
-        initialRoute: Routes.onBoardingPage,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

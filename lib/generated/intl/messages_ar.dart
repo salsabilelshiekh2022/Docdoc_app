@@ -24,7 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟ "),
-        "and": MessageLookupByLibrary.simpleMessage("و"),
+        "and": MessageLookupByLibrary.simpleMessage(" و"),
         "best_doctor": MessageLookupByLibrary.simpleMessage(
             "أفضل تطبيق لحجز المواعيد الطبية"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
@@ -62,7 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "terms_and_conditions": MessageLookupByLibrary.simpleMessage(
             "بتسجيل الدخول، أنت توافق على شروطنا وسياسة الخصوصية."),
         "terms_conditions":
-            MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
+            MessageLookupByLibrary.simpleMessage(" الشروط والأحكام"),
         "title": MessageLookupByLibrary.simpleMessage("Docdoc"),
         "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبًا مجددًا"),
         "your_number": MessageLookupByLibrary.simpleMessage("رقمك")
