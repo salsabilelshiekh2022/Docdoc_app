@@ -1,14 +1,22 @@
+import 'package:doc_app/core/routing/app_router.dart';
+import 'package:doc_app/doc_app.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'core/database/cache/cache_helper.dart';
+import 'core/di/dependency_injection.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp();
-  }
+void main() async {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.dark,
+  ));
+  WidgetsFlutterBinding.ensureInitialized();
+  setupServiceLocator();
+  await getIt<CacheHelper>().appInitialization();
+  await ScreenUtil.ensureScreenSize();
+  runApp(DocApp(
+    appRouter: AppRouter(),
+  ));
 }

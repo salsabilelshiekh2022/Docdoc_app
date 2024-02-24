@@ -49,6 +49,296 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Docdoc`
+  String get title {
+    return Intl.message(
+      'Docdoc',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Best Doctor Appointment App`
+  String get best_doctor {
+    return Intl.message(
+      'Best Doctor Appointment App',
+      name: 'best_doctor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.`
+  String get onboareding_subtitile {
+    return Intl.message(
+      'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
+      name: 'onboareding_subtitile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get Started`
+  String get get_started {
+    return Intl.message(
+      'Get Started',
+      name: 'get_started',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome Back`
+  String get welcome_back {
+    return Intl.message(
+      'Welcome Back',
+      name: 'welcome_back',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We're excited to have you back, can't wait to see what you've been up to since you last logged in.`
+  String get login_subtitle {
+    return Intl.message(
+      'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.',
+      name: 'login_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remember me`
+  String get remember_me {
+    return Intl.message(
+      'Remember me',
+      name: 'remember_me',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgot_password {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgot_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Or sign in with`
+  String get or_Sign_in_with {
+    return Intl.message(
+      'Or sign in with',
+      name: 'or_Sign_in_with',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By logging, you agree to our  Terms & Conditions and PrivacyPolicy.`
+  String get terms_and_conditions {
+    return Intl.message(
+      'By logging, you agree to our  Terms & Conditions and PrivacyPolicy.',
+      name: 'terms_and_conditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't have an account yet? `
+  String get not_have_account {
+    return Intl.message(
+      'Don\'t have an account yet? ',
+      name: 'not_have_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get sign_up {
+    return Intl.message(
+      'Sign Up',
+      name: 'sign_up',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create Account`
+  String get create_account {
+    return Intl.message(
+      'Create Account',
+      name: 'create_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!`
+  String get sign_up_subtitle {
+    return Intl.message(
+      'Sign up now and start exploring all that our app has to offer. We\'re excited to welcome you to our community!',
+      name: 'sign_up_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your number`
+  String get your_number {
+    return Intl.message(
+      'Your number',
+      name: 'your_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account yet? `
+  String get already_have_account {
+    return Intl.message(
+      'Already have an account yet? ',
+      name: 'already_have_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign In`
+  String get sign_in {
+    return Intl.message(
+      'Sign In',
+      name: 'sign_in',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `At our app, we take the security of your information seriously.`
+  String get forget_password_subtitle {
+    return Intl.message(
+      'At our app, we take the security of your information seriously.',
+      name: 'forget_password_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email or Phone Number`
+  String get email_or_phone_number {
+    return Intl.message(
+      'Email or Phone Number',
+      name: 'email_or_phone_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset Password`
+  String get reset_password {
+    return Intl.message(
+      'Reset Password',
+      name: 'reset_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms & Conditions `
+  String get terms_conditions {
+    return Intl.message(
+      'Terms & Conditions ',
+      name: 'terms_conditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `and `
+  String get and {
+    return Intl.message(
+      'and ',
+      name: 'and',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` PrivacyPolicy`
+  String get privacy_policy {
+    return Intl.message(
+      ' PrivacyPolicy',
+      name: 'privacy_policy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By logging, you agree to our `
+  String get by_logging_you_agree {
+    return Intl.message(
+      'By logging, you agree to our ',
+      name: 'by_logging_you_agree',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message(
+      'Phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -57,6 +347,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
     ];
   }
 
