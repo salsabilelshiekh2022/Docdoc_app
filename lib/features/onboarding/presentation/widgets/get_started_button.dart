@@ -3,6 +3,8 @@ import 'package:doc_app/core/theme/app_text_styles.dart';
 import 'package:doc_app/core/utils/extention.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/database/cache/cache_helper.dart';
+import '../../../../core/di/dependency_injection.dart';
 import '../../../../core/routing/routes.dart';
 import '../../../../generated/l10n.dart';
 
@@ -13,7 +15,8 @@ class GetStartedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {
-        context.pushNamed(Routes.loginPage);
+        getIt<CacheHelper>().cacheData(key: "isOnBoardingVisited", value: true);
+        context.pushReplacementNamed(Routes.loginPage);
       },
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(AppColors.mainBlue),

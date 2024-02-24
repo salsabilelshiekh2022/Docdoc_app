@@ -22,11 +22,49 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "already_have_account":
+            MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟ "),
+        "and": MessageLookupByLibrary.simpleMessage(" و"),
         "best_doctor": MessageLookupByLibrary.simpleMessage(
             "أفضل تطبيق لحجز المواعيد الطبية"),
+        "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
+            "من خلال تسجيل الدخول، فإنك توافق على "),
+        "create_account": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "email_or_phone_number": MessageLookupByLibrary.simpleMessage(
+            "البريد الإلكتروني أو رقم الهاتف"),
+        "forget_password_subtitle": MessageLookupByLibrary.simpleMessage(
+            "في تطبيقنا، نحن نأخذ أمان معلوماتك بجدية."),
+        "forgot_password":
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "get_started": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "login_subtitle": MessageLookupByLibrary.simpleMessage(
+            "نحن متحمسون لرؤيتك مجددًا، لا يمكننا الانتظار لنرى ماذا كنت تفعل منذ آخر مرة قمت فيها بتسجيل الدخول."),
+        "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "not_have_account":
+            MessageLookupByLibrary.simpleMessage("ليس لديك حساب بعد؟ "),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
             "ادارة وجدولة كل مواعيدك الطبية بسهولة مع دوكدوك لتحصل على تجربة جديدة."),
-        "title": MessageLookupByLibrary.simpleMessage("Docdoc")
+        "or_Sign_in_with": MessageLookupByLibrary.simpleMessage(
+            "أو قم بتسجيل الدخول باستخدام"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "remember_me": MessageLookupByLibrary.simpleMessage("تذكرني"),
+        "reset_password":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "sign_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "sign_up": MessageLookupByLibrary.simpleMessage("سجل"),
+        "sign_up_subtitle": MessageLookupByLibrary.simpleMessage(
+            "اشترك الآن وابدأ استكشاف كل ما تقدمه تطبيقنا. نحن متحمسون لاستقبالك في مجتمعنا!"),
+        "terms_and_conditions": MessageLookupByLibrary.simpleMessage(
+            "بتسجيل الدخول، أنت توافق على شروطنا وسياسة الخصوصية."),
+        "terms_conditions":
+            MessageLookupByLibrary.simpleMessage(" الشروط والأحكام"),
+        "title": MessageLookupByLibrary.simpleMessage("Docdoc"),
+        "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبًا مجددًا"),
+        "your_number": MessageLookupByLibrary.simpleMessage("رقمك")
       };
 }

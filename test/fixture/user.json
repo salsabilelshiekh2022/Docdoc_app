@@ -1,0 +1,9 @@
+{
+    "message": "success",
+    "data": {
+        "token": "qwer",
+        "username": "sali"
+    },
+    "status": true,
+    "code": 200
+}
