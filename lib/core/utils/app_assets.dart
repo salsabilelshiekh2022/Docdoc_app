@@ -15,6 +15,8 @@ abstract class AppAssets {
   static const String messageIcon = "assets/images/svg/message_icon.svg";
   static const String calendarIcon = "assets/images/svg/calendar_icon.svg";
   static const String searchIcon = "assets/images/svg/search_icon.svg";
+  static const String notificationIcon =
+      "assets/images/svg/notification_icon.svg";
   static const String baby = "assets/images/png/baby.png";
   static const String brain = "assets/images/png/brain.png";
   static const String generaldoctor = "assets/images/png/general_doctor.png";
