@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../core/utils/spacing.dart';
 import '../widgets/home_app_bar.dart';
+import '../widgets/home_banner.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,9 +15,11 @@ class HomePage extends StatelessWidget {
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-            child: const Column(
+            child: Column(
               children: [
-                HomeAppBar(),
+                const HomeAppBar(),
+                verticalSpace(12),
+                const HomeBanner(),
               ],
             ),
           ),
