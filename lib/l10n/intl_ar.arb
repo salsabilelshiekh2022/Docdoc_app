@@ -27,7 +27,21 @@
   "and": " و",
   "privacy_policy": "سياسة الخصوصية",
   "name":"الاسم",
-    "phone":"رقم الهاتف"
+ "phone":"رقم الهاتف",
+ "hi": "مرحبا",
+"how_are_you": "كيف حالك اليوم؟",
+"book_and_schedule": "احجز واجري موعدًا مع أقرب طبيب",
+"find_nearby": "البحث عن الأقرب",
+"doctor_speciality": "تخصص الطبيب",
+"general": "عام",
+"neuro_logic": "أعصاب",
+"pediatric": "طب الأطفال",
+"rediology": "التصوير الطبي",
+"see_all": "عرض الكل ",
+"recommendation_doctor": "الأطباء المرشحين ",
+"reviews": "المراجعات",
+"doctor_name": "الدكتور راندي ويغام",
+"rsud": "مستشفى غاتوت سوبروتو"
 
 
 }

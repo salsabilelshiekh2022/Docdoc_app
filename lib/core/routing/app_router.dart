@@ -7,6 +7,8 @@ import 'package:doc_app/features/onboarding/presentation/pages/onboarding_page.d
 import 'package:doc_app/features/splash/presentation/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
+import '../../features/home/presentation/pages/nav_bar.dart';
+
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -33,6 +35,11 @@ class AppRouter {
       case Routes.splashPage:
         return MaterialPageRoute(
           builder: (_) => const SplashPage(),
+        );
+
+      case Routes.navBar:
+        return MaterialPageRoute(
+          builder: (_) => const NavBarView(),
         );
 
       default:

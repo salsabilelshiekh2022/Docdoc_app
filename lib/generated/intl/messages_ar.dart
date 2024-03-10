@@ -27,21 +27,32 @@ class MessageLookup extends MessageLookupByLibrary {
         "and": MessageLookupByLibrary.simpleMessage(" و"),
         "best_doctor": MessageLookupByLibrary.simpleMessage(
             "أفضل تطبيق لحجز المواعيد الطبية"),
+        "book_and_schedule": MessageLookupByLibrary.simpleMessage(
+            "احجز واجري موعدًا مع أقرب طبيب"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
             "من خلال تسجيل الدخول، فإنك توافق على "),
         "create_account": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+        "doctor_name":
+            MessageLookupByLibrary.simpleMessage("الدكتور راندي ويغام"),
+        "doctor_speciality":
+            MessageLookupByLibrary.simpleMessage("تخصص الطبيب"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "email_or_phone_number": MessageLookupByLibrary.simpleMessage(
             "البريد الإلكتروني أو رقم الهاتف"),
+        "find_nearby": MessageLookupByLibrary.simpleMessage("البحث عن الأقرب"),
         "forget_password_subtitle": MessageLookupByLibrary.simpleMessage(
             "في تطبيقنا، نحن نأخذ أمان معلوماتك بجدية."),
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "general": MessageLookupByLibrary.simpleMessage("عام"),
         "get_started": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "hi": MessageLookupByLibrary.simpleMessage("مرحبا"),
+        "how_are_you": MessageLookupByLibrary.simpleMessage("كيف حالك اليوم؟"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "login_subtitle": MessageLookupByLibrary.simpleMessage(
             "نحن متحمسون لرؤيتك مجددًا، لا يمكننا الانتظار لنرى ماذا كنت تفعل منذ آخر مرة قمت فيها بتسجيل الدخول."),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "neuro_logic": MessageLookupByLibrary.simpleMessage("أعصاب"),
         "not_have_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب بعد؟ "),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
@@ -49,12 +60,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "or_Sign_in_with": MessageLookupByLibrary.simpleMessage(
             "أو قم بتسجيل الدخول باستخدام"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "pediatric": MessageLookupByLibrary.simpleMessage("طب الأطفال"),
         "phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "recommendation_doctor":
+            MessageLookupByLibrary.simpleMessage("الأطباء المرشحين "),
+        "rediology": MessageLookupByLibrary.simpleMessage("التصوير الطبي"),
         "remember_me": MessageLookupByLibrary.simpleMessage("تذكرني"),
         "reset_password":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "reviews": MessageLookupByLibrary.simpleMessage("المراجعات"),
+        "rsud": MessageLookupByLibrary.simpleMessage("مستشفى غاتوت سوبروتو"),
+        "see_all": MessageLookupByLibrary.simpleMessage("عرض الكل "),
         "sign_in": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "sign_up": MessageLookupByLibrary.simpleMessage("سجل"),
         "sign_up_subtitle": MessageLookupByLibrary.simpleMessage(

@@ -29,7 +29,7 @@ class _SplashPageState extends State<SplashPage> {
 
     if (isLogin) {
       Future.delayed(const Duration(seconds: 2), () {
-        context.pushReplacementNamed(Routes.homePage);
+        context.pushReplacementNamed(Routes.navBar);
       });
     } else if (isOnBoardingVisited) {
       Future.delayed(const Duration(seconds: 2), () {

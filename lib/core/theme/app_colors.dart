@@ -10,6 +10,7 @@ abstract class AppColors {
   static const Color gray60 = Color(0XFF9E9E9E);
   static const Color gray30 = Color(0xFFEDEDED);
   static const Color gray40 = Color(0xFFE0E0E0);
+  static const Color gray80 = Color(0xFF616161);
   static const Color surfaceBlue = Color(0XFFEAF2FF);
   static const Color surfaceGreen = Color(0XFFE9FAEF);
   static const Color surfaceRed = Color(0XFFFFEEEF);
