@@ -19,7 +19,7 @@ abstract class AppAssets {
       "assets/images/svg/notification_icon.svg";
   static const String baby = "assets/images/png/baby.png";
   static const String brain = "assets/images/png/brain.png";
-  static const String generaldoctor = "assets/images/png/general_doctor.png";
+  static const String generalDoctor = "assets/images/png/general_doctor.png";
   static const String femaleDoctor = "assets/images/png/female_doctor.png";
   static const String homeDoctor = "assets/images/png/home_doctor.jpg";
   static const String kidneys = "assets/images/png/kidneys.png";
