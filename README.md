@@ -4,17 +4,32 @@
 ## Note
 This repository is still under development
 
-<!--## 🎨 System Design
+## 🎨 Application Architecture
 
-![system design](https://github.com/salsabilelshiekh2022/Docdoc_app/assets/120952415/9318db8b-d054-4eae-91fe-f1fe85fa1ce8)-->
+<img src="screenshots/architecture.PNG" width="600">
+
 
 ## 🔌 Packages
 - flutter_screenutil
 - flutter_svg
 - flutter_localizations
 - flutter_native_splash
+- equatable
+- flutter_bloc
+- get_it
+- internet_connection_checker
+- shared_preferences
+- dio
+- dartz
+- mockito
+- build_runner
+  
 
 ## 📸 ScreenShots
-<!--| Docdoc                                      | Application                                |
+| Docdoc                                      | Application                                |
 | -----------------------------------------   | -------------------------------------------|
-| <img src="https://github.com/salsabilelshiekh2022/Docdoc_app/assets/120952415/f8b11a28-2184-4a93-833b-ca0e95b5855c"   width ="400"/> | <img src = "https://github.com/salsabilelshiekh2022/Docdoc_app/assets/120952415/6d1af0d5-8a7e-4b51-a67a-c661f809000f" width="400"/>  |-->
+| <img src="screenshots/1.jpg" width="400">   | <img src="screenshots/2.jpg" width="400">  |
+| <img src="screenshots/3.jpg" width="400">   | <img src="screenshots/4.jpg" width="400">  |
+| <img src="screenshots/5.jpg" width="400">   | <img src="screenshots/6.jpg" width="400">  |
+| <img src="screenshots/7.jpg" width="400">   | <img src="screenshots/8.jpg" width="400">  |
+

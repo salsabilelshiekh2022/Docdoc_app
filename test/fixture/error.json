@@ -1,0 +1,22 @@
+{
+    "message": "Unprocessable Entity",
+    "data": {
+        "name": [
+            "The name field is required."
+        ],
+        "email": [
+            "The email field is required."
+        ],
+        "phone": [
+            "The phone field is required."
+        ],
+        "gender": [
+            "The sex field is required."
+        ],
+        "password": [
+            "The password field is required."
+        ]
+    },
+    "status": false,
+    "code": 422
+}

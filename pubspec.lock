@@ -303,7 +303,7 @@ packages:
     source: hosted
     version: "2.0.3"
   flutter_localizations:
-    dependency: transitive
+    dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -341,14 +341,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  fluttertoast:
-    dependency: "direct main"
-    description:
-      name: fluttertoast
-      sha256: dfdde255317af381bfc1c486ed968d5a43a2ded9c931e87cbecd88767d6a71c1
-      url: "https://pub.dev"
-    source: hosted
-    version: "8.2.4"
   frontend_server_client:
     dependency: transitive
     description:
@@ -513,10 +505,17 @@ packages:
     dependency: transitive
     description:
       name: meta
+<<<<<<< HEAD
       sha256: d584fa6707a52763a52446f02cc621b077888fb63b93bbcb1143a7be5a0c0c04
       url: "https://pub.dev"
     source: hosted
     version: "1.11.0"
+=======
+      sha256: "7687075e408b093f36e6bbf6c91878cc0d4cd10f409506f7bc996f68220b9136"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.12.0"
+>>>>>>> 8be7ff0d40e548c3f33b172503d0d02f7bb07c3b
   mime:
     dependency: transitive
     description:
@@ -798,10 +797,17 @@ packages:
     dependency: transitive
     description:
       name: test_api
+<<<<<<< HEAD
       sha256: "5c2f730018264d276c20e4f1503fd1308dfbbae39ec8ee63c5236311ac06954b"
       url: "https://pub.dev"
     source: hosted
     version: "0.6.1"
+=======
+      sha256: "9955ae474176f7ac8ee4e989dadfb411a58c30415bcfb648fa04b2b8a03afa7f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.0"
+>>>>>>> 8be7ff0d40e548c3f33b172503d0d02f7bb07c3b
   timing:
     dependency: transitive
     description:
