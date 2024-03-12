@@ -8,6 +8,16 @@ abstract class AppTextStyle {
     color: AppColors.gray24,
     fontWeight: FontWeight.w700,
   );
+  static TextStyle font18Gray24Weight700 = TextStyle(
+    fontSize: 18.sp,
+    color: AppColors.gray24,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle font18WhiteWeight500 = TextStyle(
+    fontSize: 18.sp,
+    color: Colors.white,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle font24MainBlueWeight700 = TextStyle(
     fontSize: 24.sp,
     color: AppColors.mainBlue,
@@ -16,6 +26,11 @@ abstract class AppTextStyle {
   static TextStyle font12MainBlueWeight400 = TextStyle(
     fontSize: 12.sp,
     color: AppColors.mainBlue,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font11Gray80Weight400 = TextStyle(
+    fontSize: 11.sp,
+    color: AppColors.gray80,
     fontWeight: FontWeight.w400,
   );
   static TextStyle font32MainBlueWeight700 = TextStyle(
@@ -37,6 +52,11 @@ abstract class AppTextStyle {
     fontSize: 12.sp,
     color: AppColors.gray24,
     fontWeight: FontWeight.w400,
+  );
+  static TextStyle font16Gray24Weight700 = TextStyle(
+    fontSize: 16.sp,
+    color: AppColors.gray24,
+    fontWeight: FontWeight.w700,
   );
   static TextStyle font14Gray70Weight400 = TextStyle(
     fontSize: 14.sp,

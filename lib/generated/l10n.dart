@@ -339,6 +339,146 @@ class S {
       args: [],
     );
   }
+
+  /// `Hi`
+  String get hi {
+    return Intl.message(
+      'Hi',
+      name: 'hi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How Are You Today?`
+  String get how_are_you {
+    return Intl.message(
+      'How Are You Today?',
+      name: 'how_are_you',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book and schedule with nearest doctor`
+  String get book_and_schedule {
+    return Intl.message(
+      'Book and schedule with nearest doctor',
+      name: 'book_and_schedule',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find Nearby`
+  String get find_nearby {
+    return Intl.message(
+      'Find Nearby',
+      name: 'find_nearby',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Doctor Speciality`
+  String get doctor_speciality {
+    return Intl.message(
+      'Doctor Speciality',
+      name: 'doctor_speciality',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `General`
+  String get general {
+    return Intl.message(
+      'General',
+      name: 'general',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Neurologic`
+  String get neuro_logic {
+    return Intl.message(
+      'Neurologic',
+      name: 'neuro_logic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pediatric`
+  String get pediatric {
+    return Intl.message(
+      'Pediatric',
+      name: 'pediatric',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Radiology`
+  String get rediology {
+    return Intl.message(
+      'Radiology',
+      name: 'rediology',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See All`
+  String get see_all {
+    return Intl.message(
+      'See All',
+      name: 'see_all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recommendation Doctor`
+  String get recommendation_doctor {
+    return Intl.message(
+      'Recommendation Doctor',
+      name: 'recommendation_doctor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reviews`
+  String get reviews {
+    return Intl.message(
+      'Reviews',
+      name: 'reviews',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dr. Randy Wigham`
+  String get doctor_name {
+    return Intl.message(
+      'Dr. Randy Wigham',
+      name: 'doctor_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `RSUD Gatot Subroto`
+  String get rsud {
+    return Intl.message(
+      'RSUD Gatot Subroto',
+      name: 'rsud',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

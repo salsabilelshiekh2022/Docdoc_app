@@ -27,22 +27,33 @@ class MessageLookup extends MessageLookupByLibrary {
         "and": MessageLookupByLibrary.simpleMessage("and "),
         "best_doctor":
             MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
+        "book_and_schedule": MessageLookupByLibrary.simpleMessage(
+            "Book and schedule with nearest doctor"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
             "By logging, you agree to our "),
         "create_account":
             MessageLookupByLibrary.simpleMessage("Create Account"),
+        "doctor_name": MessageLookupByLibrary.simpleMessage("Dr. Randy Wigham"),
+        "doctor_speciality":
+            MessageLookupByLibrary.simpleMessage("Doctor Speciality"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "email_or_phone_number":
             MessageLookupByLibrary.simpleMessage("Email or Phone Number"),
+        "find_nearby": MessageLookupByLibrary.simpleMessage("Find Nearby"),
         "forget_password_subtitle": MessageLookupByLibrary.simpleMessage(
             "At our app, we take the security of your information seriously."),
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "general": MessageLookupByLibrary.simpleMessage("General"),
         "get_started": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "hi": MessageLookupByLibrary.simpleMessage("Hi"),
+        "how_are_you":
+            MessageLookupByLibrary.simpleMessage("How Are You Today?"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "login_subtitle": MessageLookupByLibrary.simpleMessage(
             "We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in."),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "neuro_logic": MessageLookupByLibrary.simpleMessage("Neurologic"),
         "not_have_account": MessageLookupByLibrary.simpleMessage(
             "Don\'t have an account yet? "),
         "onboareding_subtitile": MessageLookupByLibrary.simpleMessage(
@@ -50,12 +61,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "or_Sign_in_with":
             MessageLookupByLibrary.simpleMessage("Or sign in with"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "pediatric": MessageLookupByLibrary.simpleMessage("Pediatric"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage(" PrivacyPolicy"),
+        "recommendation_doctor":
+            MessageLookupByLibrary.simpleMessage("Recommendation Doctor"),
+        "rediology": MessageLookupByLibrary.simpleMessage("Radiology"),
         "remember_me": MessageLookupByLibrary.simpleMessage("Remember me"),
         "reset_password":
             MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "reviews": MessageLookupByLibrary.simpleMessage("Reviews"),
+        "rsud": MessageLookupByLibrary.simpleMessage("RSUD Gatot Subroto"),
+        "see_all": MessageLookupByLibrary.simpleMessage("See All"),
         "sign_in": MessageLookupByLibrary.simpleMessage("Sign In"),
         "sign_up": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "sign_up_subtitle": MessageLookupByLibrary.simpleMessage(

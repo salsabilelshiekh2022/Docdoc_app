@@ -27,6 +27,20 @@
     "privacy_policy":" PrivacyPolicy",
     "by_logging_you_agree":"By logging, you agree to our ",
     "name":"Name",
-    "phone":"Phone"
+    "phone":"Phone",
+    "hi":"Hi",
+    "how_are_you":"How Are You Today?",
+    "book_and_schedule":"Book and schedule with nearest doctor",
+    "find_nearby":"Find Nearby",
+    "doctor_speciality":"Doctor Speciality",
+    "general":"General",
+    "neuro_logic":"Neurologic",
+    "pediatric":"Pediatric",
+    "rediology":"Radiology",
+    "see_all":"See All",
+    "recommendation_doctor":"Recommendation Doctor",
+    "reviews":"Reviews",
+    "doctor_name":"Dr. Randy Wigham",
+    "rsud":"RSUD Gatot Subroto"
 
 }

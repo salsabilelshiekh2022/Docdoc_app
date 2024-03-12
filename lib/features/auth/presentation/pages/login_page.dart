@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
         child: BlocListener<AuthBloc, AuthState>(
           listener: (context, state) {
             if (state is LoginSuccess) {
-              context.pushReplacementNamed(Routes.homePage);
+              context.pushReplacementNamed(Routes.navBar);
             } else if (state is LoginError) {
               showSnackBar(
                   'This email doesn\'t match of any users try to Register and then try again',
